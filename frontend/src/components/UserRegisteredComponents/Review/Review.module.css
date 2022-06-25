@@ -10,16 +10,18 @@
     padding-top: 10px;
     justify-content: center;
     display: flex;
-    margin-top: 5%;
+    margin-top: 8%;
+    padding-top: 3rem;
 }
 
 .input{
     color:rgb(61, 61, 61);
-    align-items: center;
+  
+    margin-bottom: 10px;
+    
 }
 label{
     color:#F6AA1C;
-    text-align: center;
     align-items: center;
     padding-left: 10px;
     padding-right: 10px;
