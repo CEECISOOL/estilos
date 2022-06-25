@@ -3,7 +3,7 @@ import { useState } from 'react'
 import NavBar from '../../CommonComponents/NavBar/NavBar'
 import { useDispatch, useSelector } from 'react-redux'
 import { getDetalleOrder, review } from '../../../redux/actions/actionOrder'
-import { useNavigate, useParams } from 'react-router'
+import { useNavigate, useParams, Link } from 'react-router-dom'
 import Footer from '../../CommonComponents/Footer/Footer'
 import s from './Review.module.css'
 const Review = () => {
@@ -48,38 +48,46 @@ const Review = () => {
 
   return (
     <>
+    <div className={s.papa}>
       <NavBar />
+      <Link to = '/profile'>
+        <button className={s.buttonPerfil}>VOLVER AL MENU</button>
+      </Link>
 <div className={s.containerGral}>
+</div>
   <div className={s.containerForm}>
-      <form onSubmit={handleSubmit} >
-        <label htmlFor="">TÍTULO</label>
+      <form className={s.form} onSubmit={handleSubmit} >
+        <label className={s.label} htmlFor="">TÍTULO</label>
         <div>
-          <input
+          <input className={s.input}
             type="text"
             name="title"
             value={input.title}
             onChange={(e) => handleChange(e)}
           />
         </div>
-        <label htmlFor="">DESCRIPCIÓN</label>
+        <label className={s.label}
+        htmlFor="">DESCRIPCIÓN</label>
         <div>
-          <input
+          <input className={s.input}
             type="text"
             name="description"
             value={input.description}
             onChange={(e) => handleChange(e)}
           />
         </div>
-        <label htmlFor="">PUNTUACIÓN</label>
+        <label className={s.label} 
+        htmlFor="">PUNTUACIÓN</label>
         <div>
-          <input
+          <input className={s.input}
             type="number"
             name="score"
             value={input.score}
             onChange={(e) => handleChange(e)}
           />
         </div>
-        <input type="submit" value="enviar" />
+        <input className={s.input}
+        type="submit" value="enviar" />
       </form>
       </div>
       <Footer/>

@@ -1,19 +1,18 @@
 .footer {
   padding: 1em;
-  
-  left: 0;
-  bottom: 0;
   width: 100%;
   color: #F6AA1C ;
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: #0D0F10;
   justify-content: center;
   text-align: center;
-  margin-top: auto;
-  margin-bottom: 0%;
-  position:fixed;
+  /* margin-top: auto;
+  margin-bottom: 0%; */
+  position:absolute;
   left:0px;
   bottom:0px;
   height:85px;
   width:100%;
   
 }
+
+
