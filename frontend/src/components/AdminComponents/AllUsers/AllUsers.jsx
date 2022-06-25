@@ -40,7 +40,7 @@ function AllUsers() {
     }
   }
   return (
-    <div>
+    <div className={s.containerPrimero}>
       <NavBar />
 
       <div className={s.container}>

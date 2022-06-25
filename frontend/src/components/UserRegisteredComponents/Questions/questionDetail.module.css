@@ -1,3 +1,10 @@
+.containerTodo{
+    background-color:  #212529;
+
+}
+h3{
+    color: white
+}
 .imageR {
     width: 50px;
     border-radius: 50%;
@@ -8,11 +15,12 @@
     width: 95%;
     max-width: 120rem;
     margin: 2rem auto;
+    background-color: #0D0F10;
 }
 
 .usersTable{
     background-color: rgba(0, 0, 0, 0.171);
-    color: #381c1c;
+    color: #F6AA1C;
     font-size: 17px;
     width: 60%;
     padding:2rem 25px;
