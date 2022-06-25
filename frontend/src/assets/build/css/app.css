@@ -593,7 +593,7 @@ img {
   display: flex;
   justify-content: space-evenly;
   padding-top: 3px;
-  background: rgba(0, 0, 0, 0.6);
+  background: #0D0F10;
   position: -webkit-sticky; /* Safari */
   position: sticky;
   top: 0;
