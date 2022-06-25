@@ -593,7 +593,7 @@ img {
   display: flex;
   justify-content: space-evenly;
   padding-top: 3px;
-  background: #120f0f;
+  background: rgba(0, 0, 0, 0.6);
   position: -webkit-sticky; /* Safari */
   position: sticky;
   top: 0;
@@ -754,20 +754,21 @@ body::-webkit-scrollbar-thumb {
   flex-wrap: wrap;
   font-size: large;
   font-weight: bold;
-  background: #220901;
   justify-content: center;
   padding: 1rem;
 }
 
 .select {
   display: flex;
-  background-color: #f0f8ff;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: #F6AA1C;
 }
 
 .filter {
   display: flex;
-  background-color: #f0f8ff;
+  background-color: rgba(0, 0, 0, 0.6);
   justify-content: space-between;
+  color: #F6AA1C;
 }
 
 .btnS {
@@ -784,14 +785,14 @@ body::-webkit-scrollbar-thumb {
   border-radius: 5px;
   margin-right: 5px;
   padding-top: 4px;
-  background-color: #f0f8ff;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: #F6AA1C;
   font-size: 1.5rem;
 }
 
 .btnR:hover {
-  transform: scale(1.05);
-  color: rgb(247, 243, 243);
-  color: rgb(47, 47, 47);
+  color: #f2931d;
+  background-color: rgb(47, 47, 47);
 }
 
 .divFilter {
