@@ -14,7 +14,7 @@ function AllOrders() {
   }, [])
   return (
 
-    <div>
+    <div className={s.containerPrimero}>
       <NavBar />
       <div className={s.container}>
         <div className={s.flex}>

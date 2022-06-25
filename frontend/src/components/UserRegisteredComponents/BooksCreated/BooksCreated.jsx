@@ -18,7 +18,7 @@ export default function BooksCreated() {
   }, [dispatch]);
 
   return (
-    <>
+    <div className={s.todo}>
       <NavBar />
       <Link to = '/profile'>
         <button className={s.buttonPerfil}>VOLVER AL MENU</button>
@@ -44,6 +44,6 @@ export default function BooksCreated() {
         <Footer />
       </div>
 
-    </>
+    </div>
   )
 }

@@ -924,12 +924,11 @@ body::-webkit-scrollbar-thumb {
   flex-direction: column;
   align-items: flex-start;
   gap: 1rem;
-  background-color: #621708;
+  background-color: #0D0F10;
   padding: 1rem 0;
 }
 
 .divModalPerfil {
-  border: none;
   height: 35px;
   width: 30%;
   border-radius: 0.5rem;
@@ -953,7 +952,7 @@ body::-webkit-scrollbar-thumb {
 .divModalPerfil:hover {
   transition-duration: 500ms;
   width: 80%;
-  background-color: #941B0C;
+  background-color: #F6AA1C;
 }
 
 .icon {
@@ -974,6 +973,10 @@ body::-webkit-scrollbar-thumb {
   position: relative;
   color: rgb(223, 210, 188);
   border: 1px solid #621708;
+}
+
+.container {
+  background-color: #212529;
 }
 
 .clip-detalle {
@@ -1050,6 +1053,7 @@ body::-webkit-scrollbar-thumb {
 
 .info-about {
   padding: 7rem 0;
+  background-color: #212529;
 }
 
 .row-about {
@@ -1063,7 +1067,7 @@ body::-webkit-scrollbar-thumb {
   display: inline-block;
   width: 800px;
   padding: 7rem 8rem 8rem 7rem;
-  background-color: #220901;
+  background-color: #0D0F10;
   position: relative;
   left: 50%;
   right: 50%;
@@ -1077,8 +1081,8 @@ body::-webkit-scrollbar-thumb {
   background-color: skyblue;
   top: 0px;
   right: 0px;
-  border-bottom: 20px solid #411507;
-  border-left: 20px solid #411507;
+  border-bottom: 20px solid #020202;
+  border-left: 20px solid #020202;
   border-right: 20px solid #c1c1c1;
   border-top: 20px solid #c1c1c1;
   position: absolute;
@@ -1089,8 +1093,8 @@ body::-webkit-scrollbar-thumb {
   display: block;
   width: 0px;
   height: 0px;
-  border-top: 40px solid #411507;
-  border-right: 40px solid #411507;
+  border-top: 40px solid #020202;
+  border-right: 40px solid #020202;
   border-left: 40px solid #c1c1c1;
   border-bottom: 40px solid #c1c1c1;
   bottom: 0px;
@@ -1103,7 +1107,7 @@ body::-webkit-scrollbar-thumb {
   margin-right: 9%;
 }
 .card-about .h2-about {
-  color: snow;
+  color: #F6AA1C;
   margin-bottom: 1rem;
   font-weight: 400;
   text-transform: uppercase;
@@ -1111,7 +1115,7 @@ body::-webkit-scrollbar-thumb {
   text-align: center;
 }
 .card-about .p-about {
-  color: snow;
+  color: #F6AA1C;
   font-size: 14px;
   width: 100%;
 }
@@ -1194,11 +1198,7 @@ ul {
 }
 
 .container-login {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  min-height: 100vh;
-  background: rgb(155, 120, 120);
+  background: #212529;
 }
 
 .screen {

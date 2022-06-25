@@ -5,7 +5,7 @@ import {Link} from 'react-router-dom'
 
 function AdminHome() {
   return (
-    <div>
+    <div className={s.container}>
         <NavBar/>
       <div className={s.AdCont}>
       <Link to="/admin/users" className={s.linked}>TODOS LOS USUARIOS</Link>

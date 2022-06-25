@@ -90,12 +90,9 @@ const Details = () => {
       <NavBar />
       {
         detail.msgError ? <NotFound /> :
-      <div>
-
-
+      <div className="container">
       <div className="card-detalle">
         <div className="clip-detalle">
-
         </div>
         <div> {/* ----- Acá tendríamos que hacer un carrusel de las imágenes que traemos de Cloudinary ----- */}
           {/* image.map((e,i) => {
@@ -103,7 +100,6 @@ const Details = () => {
         }) */}
           <img src={image || book} alt="No encontrado" className="image-detalle" />
         </div>
-
         <div>
           <h3 className="pName-detalle">{nombre}</h3>
           <div className="price-detalle">
