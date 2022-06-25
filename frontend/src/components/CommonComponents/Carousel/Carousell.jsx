@@ -5,7 +5,9 @@ import s from './Carousell.module.css'
 const Carousell = () => {
 
   return (
+ 
     <Carousel>
+      
       <div className="img">
         <img className="imag " src="https://i.pinimg.com/originals/ba/26/8c/ba268c0cf6b390a2194806b1483946eb.gif" />
         {/* <p className="legend">Harry Potter</p> */}

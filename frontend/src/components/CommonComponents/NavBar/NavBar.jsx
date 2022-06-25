@@ -5,6 +5,9 @@ import { usuarioActual } from "../../../redux/actions/actionUser"
 import { useDispatch, useSelector } from "react-redux"
 import profile from "../../../assets/images/avatar2.png"
 import io from "socket.io-client"
+import home from '../../../assets/images/home2.png'
+import homee from '../../../assets/images/home3.png'
+
 let socket
 
 import ProfileSettings from "../../UserRegisteredComponents/ProfileSettings/ProfileSettings"
@@ -42,7 +45,7 @@ export default function NavBar() {
   return (
     <div>
       <nav className="nav" onClick={closeModal}>
-        <Link to="/" className="link">HOME</Link>
+        <Link to="/" className="home"><img src={home} alt="" /></Link>
         {token ? (<Link to="/create" className="link">VENDER</Link>) : null}
         <Link to="/about" className="link">ABOUT</Link>
         {!token ? (<Link to="/homeout" className="link">REGISTRO / LOGIN</Link>) : null}

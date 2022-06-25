@@ -506,6 +506,7 @@ img {
   width: 260px;
   color: white;
   border-radius: 25px;
+  height: 430px;
 }
 
 .card-book:hover {
@@ -518,6 +519,7 @@ img {
   width: 50%;
   margin-left: 65px;
   height: 180px;
+  margin-top: 15px;
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -532,14 +534,19 @@ img {
 }
 
 .tagtagteal-book {
-  background-color: #c97206;
-  border-radius: 50px;
-  font-size: 12px;
+  background-color: rgba(246, 170, 28, 0.6);
+  border-radius: 20px;
+  font-size: 15px;
+  color: white;
   margin: 0;
-  color: #f0f8ff;
   padding: 2px 10px;
+  margin-bottom: 15px;
   text-transform: uppercase;
   cursor: pointer;
+}
+
+.price {
+  font-size: 14px;
 }
 
 .cardbody-book .parrafo-book {
@@ -590,11 +597,19 @@ img {
   position: -webkit-sticky; /* Safari */
   position: sticky;
   top: 0;
-  height: 70px;
+  height: 80px;
 }
 
 body::-webkit-scrollbar {
   width: 7px;
+}
+
+.home {
+  width: 65px;
+}
+
+.home:hover {
+  transform: scale(1.1);
 }
 
 body::-webkit-scrollbar-thumb {
@@ -1113,7 +1128,7 @@ ul {
 .img {
   margin-top: 20px;
   width: 1200px;
-  margin-left: 250px;
+  margin-left: 15%;
 }
 
 .link-chatbot {

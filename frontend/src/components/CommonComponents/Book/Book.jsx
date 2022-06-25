@@ -9,8 +9,8 @@ function Book({ nombre, image, price, imageUser, nameUser, descripcion }) {
         <img className="book" src={image || book} alt='Imagen no encontrada' />
         </div>
         <div className="cardbody-book">
-          <span className="tagtagteal-book">{nombre}</span>
-          <h4>{price}</h4>
+          <p className="tagtagteal-book">{nombre}</p>
+          <p className="price" >{price}</p>
           <p className="parrafo-book">{descripcion.join(', ')}</p>
           <div className="user-book">
             <img src={imageUser} alt="user" />
