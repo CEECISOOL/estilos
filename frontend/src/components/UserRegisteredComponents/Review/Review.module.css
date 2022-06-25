@@ -1,8 +1,6 @@
-.flex{
-    display:flex;
-    text-align: center;
+.containerGral{
+    background-color: #212529;
 }
-
-.inpu[type="radio"]{
-    display: none;
+.containerForm{
+    background-color: #0D0F10;
 }

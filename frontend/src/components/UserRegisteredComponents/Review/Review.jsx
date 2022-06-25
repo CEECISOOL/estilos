@@ -4,7 +4,8 @@ import NavBar from '../../CommonComponents/NavBar/NavBar'
 import { useDispatch, useSelector } from 'react-redux'
 import { getDetalleOrder, review } from '../../../redux/actions/actionOrder'
 import { useNavigate, useParams } from 'react-router'
-
+import Footer from '../../CommonComponents/Footer/Footer'
+import s from './Review.module.css'
 const Review = () => {
   const Navigate = useNavigate()
   const { id } = useParams()
@@ -48,7 +49,8 @@ const Review = () => {
   return (
     <>
       <NavBar />
-
+<div className={s.containerGral}>
+  <div className={s.containerForm}>
       <form onSubmit={handleSubmit} >
         <label htmlFor="">TÍTULO</label>
         <div>
@@ -79,6 +81,9 @@ const Review = () => {
         </div>
         <input type="submit" value="enviar" />
       </form>
+      </div>
+      <Footer/>
+      </div>
     </>
   )
 }
