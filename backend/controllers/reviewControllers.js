@@ -5,7 +5,7 @@ import Order from "../models/Order.js"
 const nuevaReview = async (req, res) => {
 
   const { id } = req.params
-  const {vendedor} = req.body
+  const { vendedor } = req.body
 
   const user = await Order.findById(id)
 
@@ -21,7 +21,7 @@ const nuevaReview = async (req, res) => {
     const review = await newReview.save()
     user.reviews = user.reviews.concat(review._id)
     await user.save()
-  
+
     res.status(201).json(review);
   } catch (error) {
     console.log(error)
@@ -40,10 +40,19 @@ const obtenerReview = async (req, res) => {
   }
 }
 
+const obtenerReviewAdmin = async (req, res) => {
+  try {
+    const review = await Review.find().populate('orden').populate('vendedor').populate('comprador')
+    res.json(review)
+  } catch (error) {
+    console.log(error)
+  }
+}
 
 
 
 export {
   nuevaReview,
-  obtenerReview
+  obtenerReview,
+  obtenerReviewAdmin
 }

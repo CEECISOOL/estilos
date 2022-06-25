@@ -36,6 +36,7 @@ import HomeChat from './components/CommonComponents/Chat/HomeChat'
 //----------------------------------ADMIN---------------------------------------------
 import AllUsers from "./components/AdminComponents/AllUsers/AllUsers";
 import AdminHome from "./components/AdminComponents/AdminHome/AdminHome";
+import AllReviews from './components/AdminComponents/AllReviews/AllReviews'
 import AllOrders from "./components/AdminComponents/AllOrders/AllOrders";
 import ConfirmacionPago from "./components/UserRegisteredComponents/CheckOut/ConfirmacionPago/ConfirmacionPago";
 import Questions from "./components/UserRegisteredComponents/Questions/Questions.jsx";
@@ -78,6 +79,7 @@ export default function App() {
           <Route path="/admin/users" element={<AllUsers/>}/>
           <Route path="/admin" element={<AdminHome/>}/>
           <Route path="/admin/allOrders" element={<AllOrders/>}/>
+          <Route path="/admin/allReviews" element={<AllReviews/>}/>
           <Route path="/review/:id" element={<Review />} />
           <Route path="/chat" element={<HomeChat />} />
           </Route>
